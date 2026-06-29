@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Animation Studio</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🎬 Animation Studio</h1>
+        <p>Simple CSS animation tool</p>
+
+        <select id="animation">
+            <option value="fade">Fade</option>
+            <option value="slide">Slide</option>
+            <option value="scale">Scale</option>
+        </select>
+
+        <select id="speed">
+            <option value="0.5s">Fast</option>
+            <option value="1s" selected>Normal</option>
+            <option value="2s">Slow</option>
+        </select>
+
+        <button id="runBtn">Run</button>
+
+        <div class="box" id="box">Animate Me</div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

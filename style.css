@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f172a,#111827,#020617);
+    color:#fff;
+}
+
+.container{
+    width:90%;
+    max-width:450px;
+}
+
+.card{
+    background:rgba(255,255,255,.06);
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+}
+
+h1{
+    font-size:22px;
+    margin-bottom:8px;
+}
+
+p{
+    color:#cbd5e1;
+    margin-bottom:15px;
+}
+
+select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#111827;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    background:linear-gradient(135deg,#3b82f6,#22c55e);
+    color:#fff;
+}
+
+.box{
+    margin-top:20px;
+    padding:30px;
+    background:#111827;
+    border-radius:12px;
+}
+
+/* ANIMATIONS */
+.fade{
+    animation:fade var(--speed) ease;
+}
+
+@keyframes fade{
+    from{opacity:0}
+    to{opacity:1}
+}
+
+.slide{
+    animation:slide var(--speed) ease;
+}
+
+@keyframes slide{
+    from{transform:translateX(-80px);opacity:0}
+    to{transform:translateX(0);opacity:1}
+}
+
+.scale{
+    animation:scale var(--speed) ease;
+}
+
+@keyframes scale{
+    from{transform:scale(0.6);opacity:0}
+    to{transform:scale(1);opacity:1}
+}
